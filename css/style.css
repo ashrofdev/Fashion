@@ -103,3 +103,58 @@ body {
     object-fit: cover;
     z-index: -1;
 }
+
+.male-page {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-10rem);
+}
+.male-page:target {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+}
+.men {
+    background-color:  rgba(105, 105, 248, 0.616); 
+    padding: 3rem;
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 3rem;
+    text-shadow: 1rem .5rem 2rem blue;
+   
+}
+
+.img {
+    width: 25%;
+    padding: 1rem;
+    float: left;
+    margin: 0 auto;
+}
+.img:hover {
+    box-shadow: 1rem .5rem 2rem blue;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 .5rem;
+    margin: 1rem;
+    font-size: 3rem;
+    box-shadow: .5rem .5rem 5rem white;
+    
+}
+.close:hover {
+    box-shadow: -.5rem -.5rem 5rem white;
+    background-color: black;
+}
