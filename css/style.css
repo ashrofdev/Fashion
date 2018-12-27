@@ -74,7 +74,7 @@ body {
 }
 .male:hover {
     background-color: rgba(47, 47, 252, 0.829);
-    box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.274);
+    box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.192);
     transform: translateY(-5rem);
 }
 .female {
@@ -105,13 +105,14 @@ body {
 }
 
 .male-page {
-    opacity: 0;
-    visibility: hidden;
-    transition: all 1s;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     transform: translateY(-10rem);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s;
+    margin: 0 auto;
 }
 .male-page:target {
     transform: translateY(0);
@@ -136,9 +137,48 @@ body {
     padding: 1rem;
     float: left;
     margin: 0 auto;
+   
+}
+.content {
+    padding: 2rem;
+    float: right;
+    width: 80%;
+}
+.nav {
+    float: left;
+    padding: 1rem;
+    width: 20%;
+    margin-top: 5rem;
+    background-color: rgba(0, 0, 0, 0.438);
+    text-align: center;
+    border-right: 3px solid blue;
+}
+.nav h3 {
+    color: white;
+    text-shadow: 1rem 1rem 1rem black;
+    text-align: center;
+    font-size: 2rem;
+}
+.nav li {
+    margin-top: 4rem;
+    text-transform: uppercase;
+    list-style: none;
+}
+.btn {
+    background-color: blue;
+    color: white;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    letter-spacing: .4rem;
+    text-align: center;
+    border: 2px solid rgba(0, 0, 0, 0.349);
+}
+.btn:hover {
+    background-color: rgb(6, 6, 141);
+    box-shadow: .2rem .2rem 1rem black;
 }
 .img:hover {
-    box-shadow: 1rem .5rem 2rem blue;
+    box-shadow: .5rem .5rem 5rem rgba(0, 0, 255, 0.37);
 }
 a {
     text-decoration: none;
@@ -146,8 +186,8 @@ a {
 }
 .close {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 2rem;
+    right: 2rem;
     padding: 0 .5rem;
     margin: 1rem;
     font-size: 3rem;
