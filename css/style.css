@@ -110,6 +110,15 @@ body {
     width: 90%;
    
 }
+.selection p {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 1rem;
+    transform: skewX(-15deg);
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
 .male-female {
     font-size: 2rem;
     padding: 2rem;
@@ -250,13 +259,16 @@ body {
     background-color: rgba(105, 102, 102, 0.521);
     border-radius: 3rem;
     box-shadow: 0 .5rem 3rem black;
-    text-align: center;
     z-index: 2000;
     transition: all .5s;
 }
 .link:hover {
-    background-color: rgba(243, 240, 240, 0.568);
+    background-image: linear-gradient(190deg, rgb(255, 255, 255), rgba(255, 255, 255, 0.644));
     color: black;
+}
+.btn-trans {
+    margin-top: -8rem;
+    text-align: center;
 }
 
 .img:hover {
