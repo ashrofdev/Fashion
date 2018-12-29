@@ -6,13 +6,13 @@
 
 html {
     font-size: 62.5%;
+   
 }
 
 body {
     padding: 2rem 2rem 0 2rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
-   
     position: relative;
 }
 
@@ -197,4 +197,28 @@ a {
 .close:hover {
     box-shadow: -.5rem -.5rem 5rem white;
     background-color: black;
+}
+
+
+.ani {
+    background-color: rgba(57, 57, 247, 0.932);
+    height: 2rem;
+    width: 2rem;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    border-radius: 50%;
+    z-index: 200;
+}
+.input:checked ~ .ani {
+    transform: scale(80);
+}
+.meuu {
+    height: 2.5rem;
+    width: 2.5rem;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    border-radius: 50%;
+    z-index: 250;
 }
