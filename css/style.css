@@ -9,6 +9,11 @@ html {
    
 }
 
+::selection {
+    color: blue;
+    background-color: azure;
+}
+
 @keyframes times {
     0% {
         opacity: 0;
@@ -233,9 +238,27 @@ body {
     border: 2px solid rgba(0, 0, 0, 0.349);
 }
 .btn:hover {
-    background-color: rgb(6, 6, 141);
+    background-color: rgba(10, 10, 236, 0.13);
     box-shadow: .2rem .2rem 1rem black;
 }
+.link {
+    display: inline-block;
+    margin-bottom: 5rem;
+    padding: .5rem 1rem;
+    letter-spacing: .3rem;
+    color: white;
+    background-color: rgba(105, 102, 102, 0.521);
+    border-radius: 3rem;
+    box-shadow: 0 .5rem 3rem black;
+    text-align: center;
+    z-index: 2000;
+    transition: all .5s;
+}
+.link:hover {
+    background-color: rgba(243, 240, 240, 0.568);
+    color: black;
+}
+
 .img:hover {
     box-shadow: .5rem .5rem 5rem rgba(0, 0, 255, 0.37);
 }
