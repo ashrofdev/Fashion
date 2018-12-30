@@ -426,34 +426,38 @@ a {
      position: absolute;
      top: 2rem;
      left: 2rem;
+     font-size: 7rem;
+     padding-top: 2rem;
  }
+ 
 .ani:nth-child(2) {
     animation-delay: 3s;
     animation-fill-mode: backwards;
-    top: 3rem;
+    top: 4rem;
     margin-top: 1rem;
+   
 }
 .ani:nth-child(3) {
     animation-delay: 5.5s;
     animation-fill-mode: backwards;
-    top: 4rem;
+    top: 5rem;
     margin-top: 3rem;
 }
 .ani:nth-child(4) {
     animation-delay: 4s;
     animation-fill-mode: backwards;
-    top: 8rem;
+    top: 9rem;
     margin-top: 4rem;
 }
 .ani:nth-child(5) {
     animation-delay: 2s;
     animation-fill-mode: backwards;
-    top: 10rem;
+    top: 11rem;
     margin-top: 5rem;
 }
 .ani:nth-child(6) {
     animation-delay: 1s;
     animation-fill-mode: backwards;
-    top: 13rem;
+    top: 14rem;
     margin-top: 5rem;
 }
