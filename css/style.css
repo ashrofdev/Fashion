@@ -17,58 +17,44 @@ html {
 @keyframes times {
     0% {
         opacity: 0;
-        transform: rotate(180deg);
+        transform: scale(0);
+    }
+    30% {
+        color: blue;
     }
     50% {
-        opacity: 1;
-        transform: rotate(-745deg);
-        color: rgba(1, 1, 22, 0.397);
+        color: orange;
+    }
+    65% {
+        color: rgb(255, 0, 255);
     }
     70% {
-        opacity: 0;
-        transform: rotate(270deg);
-        font-weight: 700;
-        columns: rgba(255, 255, 255, 0.514);
+        opacity: 1;
+        color: green;
     }
+    80% {
+        color: red;
+    }
+    90% {
+        color: rgb(0, 255, 234);
+    }
+    
     100% {
         opacity: 1;
-        transform: rotate(0);
+        transform: scale(1.1);
     }
 }
 
 @keyframes main {
-    0% {
-        opacity: 0;
-        transform: translateY(10rem) translateX(30rem) ;
-    }
-    50% {
-        opacity: .5;
-        transform:  translateX(-30);
-        color: rgba(15, 15, 160, 0.993);
-        font-size: 3rem
+    0% {     
+        color: black;
     }
     100% {
-        opacity: 1;
-        transform:  translateY(-10);
+        color: white;
     }
 }
 
-@keyframes sub {
-    0% {
-        opacity: 0;
-        transform: translateY(-10rem) translateX(-30rem) ;
-    }
-    50% {
-        opacity: .5;
-        transform:  translateX(30);
-        color: rgb(10, 10, 177);
-        font-size: 4rem;
-    }
-    100% {
-        opacity: 1;
-        transform:  translateY(10);
-    }
-}
+
 
 
 body {
@@ -87,16 +73,22 @@ body {
     clip-path: polygon(10% 0, 100% 0, 100% 80%, 0 100%);
     z-index: 100;
 }
+.head {
+    position: absolute;
+    top: 26%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
 
 .main-heading {
-    animation: main 5s;
+    animation: main 10s alternate infinite;
     font-size: 8rem;
     letter-spacing: 2rem;
     font-weight: 500;
     line-height: 10rem;
 }
 .sub-heading {
-    animation: sub 5s;
     font-size: 2rem;
     letter-spacing: .5rem;
     font-weight: 400;
@@ -105,10 +97,10 @@ body {
 .selection {
     padding: 25rem 2rem 16rem 10rem;
     margin-top: -35%;
-    background-color:  rgba(248, 248, 248, 0.226);
+    background-color:  rgba(248, 248, 248, 0.11);
     clip-path: polygon(20% 0, 100% 0, 100% 80%, 0 100%);
     width: 90%;
-   
+    border-top: 3px solid rgba(0, 0, 0, 0.377);
 }
 .selection p {
     text-align: center;
@@ -116,12 +108,14 @@ body {
     font-weight: 400;
     padding: 1rem;
     transform: skewX(-15deg);
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+    border-top: 2px solid rgba(32, 32, 32, 0.432);
+    border-bottom: 2px solid rgba(32, 32, 32, 0.432);
+    word-spacing: 1rem;
 }
 .male-female {
-    font-size: 2rem;
+    font-size: 3rem;
     padding: 2rem;
+    margin: 5rem;
 }
 
 .MALE {
@@ -252,9 +246,11 @@ body {
 }
 .link {
     display: inline-block;
-    margin-bottom: 5rem;
-    padding: .5rem 1rem;
-    letter-spacing: .3rem;
+    margin-top: 5rem;
+    margin-bottom: 15rem;
+    padding: 1rem 2rem;
+    letter-spacing: .4rem;
+    font-size: 1.5rem;
     color: white;
     background-color: rgba(105, 102, 102, 0.521);
     border-radius: 3rem;
@@ -266,6 +262,7 @@ body {
     background-image: linear-gradient(190deg, rgb(255, 255, 255), rgba(255, 255, 255, 0.644));
     color: black;
 }
+
 .btn-trans {
     margin-top: -8rem;
     text-align: center;
@@ -299,29 +296,44 @@ a {
   
   .navigation__button {
     background-color: #fff;
-    height: 3rem;
-    width: 3rem;
+    height: 6rem;
+    width: 6rem;
     position: fixed;
-    top: 2rem;
-    right: 2rem;
+    top: 5rem;
+    right: 5rem;
     border-radius: 50%;
     z-index: 2000;
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
     text-align: center;
     cursor: pointer; }
-
+    @media (max-width: 56.25em) {
+      .navigation__button {
+        top: 4rem;
+        right: 4rem; } }
+    @media (max-width: 56.25em) {
+      .navigation__button {
+        top: 3rem;
+        right: 3rem; } }
   
   .navigation__background {
-    height: 1rem;
-    width: 1rem;
+    height: 5rem;
+    width: 5rem;
     border-radius: 50%;
     position: fixed;
-    top: 2rem;
-    right: 3rem;
-    background-image: radial-gradient(rgba(69, 69, 199, 0.432) 0%, rgb(47, 4, 126) 30%);
+    top: 5rem;
+    right: 5.5rem;
+    background-image: radial-gradient(#14045c, #50bed1e8);
     z-index: 1000;
     transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
- 
+    @media (max-width: 56.25em) {
+      .navigation__background {
+        top: 4.5rem;
+        right: 4.5rem; } }
+    @media (max-width: 35.7em) {
+      .navigation__background {
+        top: 3.5rem;
+        right: 3.5rem; } }
+  
   .navigation__nav {
     height: 100vh;
     position: fixed;
@@ -346,9 +358,9 @@ a {
   
   .navigation__link:link, .navigation__link:visited {
     display: inline-block;
-    font-size: 2rem;
-    font-weight: 200;
-    padding: .5rem 1rem;
+    font-size: 3rem;
+    font-weight: 300;
+    padding: 1rem 2rem;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
@@ -361,11 +373,11 @@ a {
   
   .navigation__link:hover, .navigation__link:active {
     background-position: 100%;
-    color: #0b2774d8;
+    color: #0e62b1;
     transform: translateX(1rem); }
   
   .navigation__checkbox:checked ~ .navigation__background {
-    transform: scale(150); }
+    transform: scale(80); }
   
   .navigation__checkbox:checked ~ .navigation__nav {
     opacity: 1;
@@ -373,12 +385,10 @@ a {
   
   .navigation__icon {
     position: relative;
-    margin-top: 2.5rem;
-    margin-bottom: .5rem;
-}
+    margin-top: 3.5rem; }
     .navigation__icon, .navigation__icon::before, .navigation__icon::after {
-      width: 1.5rem;
-      height: 3px;
+      width: 3rem;
+      height: 2px;
       background-color: #333;
       display: inline-block; }
     .navigation__icon::before, .navigation__icon::after {
@@ -387,21 +397,63 @@ a {
       left: 0;
       transition: all .2s; }
     .navigation__icon::before {
-      top: -1.5rem; }
-    .navigation__icon::after {
       top: -.8rem; }
+    .navigation__icon::after {
+      top: .8rem; }
+  
+  .navigation__button:hover .navigation__icon::before {
+    top: -1rem; }
+  
+  .navigation__button:hover .navigation__icon::after {
+    top: 1rem; }
   
   .navigation__checkbox:checked + .navigation__button .navigation__icon {
     background-color: transparent; }
+  
+  .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+    top: 0;
+    transform: rotate(135deg); }
+  
+  .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+    top: 0;
+    transform: rotate(-135deg); }
   
  .ani {
      animation: times 5s infinite;
      font-size: 5rem;
      color: white;
-     font-weight: 300;
+     font-weight: 600;
      position: absolute;
-     top: 132px;
-     left: 538px;
-     z-index: 1000;
+     top: 2rem;
+     left: 2rem;
  }
-  
+.ani:nth-child(2) {
+    animation-delay: 3s;
+    animation-fill-mode: backwards;
+    top: 3rem;
+    margin-top: 1rem;
+}
+.ani:nth-child(3) {
+    animation-delay: 5.5s;
+    animation-fill-mode: backwards;
+    top: 4rem;
+    margin-top: 3rem;
+}
+.ani:nth-child(4) {
+    animation-delay: 4s;
+    animation-fill-mode: backwards;
+    top: 8rem;
+    margin-top: 4rem;
+}
+.ani:nth-child(5) {
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+    top: 10rem;
+    margin-top: 5rem;
+}
+.ani:nth-child(6) {
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+    top: 13rem;
+    margin-top: 5rem;
+}
