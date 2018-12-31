@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+   
+}
+
+::selection {
+    color: blue;
+    background-color: azure;
+}
+
+
+img {
+    width: 20%;
+    height: 20%;
+}
+
+
+h2 {
+    font-size: 4rem;
+    font-weight: 400;
+    color: rgb(17, 17, 97);
+    text-shadow: .5rem 1rem 3rem rgba(13, 13, 110, 0.438);
+    text-align: center;
+}
+.site-owner {
+    padding: 8rem;
+    box-shadow: 3rem 1rem 1rem black;
+    position: relative;
+}
+.designer {
+    padding: 8rem;
+    position: relative;
+}
+.owner {
+    width: 20%;
+    height: 20%;
+    float: right;
+    z-index: 100;
+}
+.owner-border {
+border: 2rem solid blue;
+padding: 5rem;
+width: 20%;
+height: 20%;
+position: absolute;
+top: 16rem;
+right: 10rem;
+z-index: -1;
+}
+.paragraph-1 {
+    font-size: 1.5rem;
+    color: #777;
+    width: 60%;
+    float: left;
+}
+h4 {
+    color: rgb(20, 20, 116);
+    padding: 1rem;
+    text-shadow: 0 1rem 1rem rgb(13, 13, 110);
+    font-size: 2rem;
+}
+.ashraf {
+    width: 20%;
+    height: 20%;
+    float: left;
+   
+}
+.ashraf-border {
+    border: 2rem solid blue;
+    padding: 5rem;
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    top: 17rem;
+    left: 10rem;
+    z-index: -1;
+    }
+.paragraph-2 {
+    font-size: 1.5rem;
+    color: #777;
+    width: 60%;
+    float: right;
+}
+.fix {
+    clear: both;
+}
+@media (min-width: 1100px) {
+    .ashraf-border {
+        padding: 8rem;
+    }
+    .owner-border {
+        padding: 8rem;
+    }
+}
