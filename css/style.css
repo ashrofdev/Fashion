@@ -215,6 +215,7 @@ body {
     float: left;
     padding: 1rem;
     width: 20%;
+    height: 100%;
     margin-top: 5rem;
     background-color: rgba(0, 0, 0, 0.438);
     text-align: center;
@@ -224,12 +225,18 @@ body {
     color: white;
     text-shadow: 1rem 1rem 1rem black;
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 .nav li {
-    margin-top: 4rem;
+    margin-top: 6rem;
     text-transform: uppercase;
     list-style: none;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+    
+}
+.nav li a {
+    font-size: 2.3rem;
 }
 .btn {
     background-color: blue;
