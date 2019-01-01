@@ -138,11 +138,15 @@ body {
     padding: .7rem 1.2rem;
     border-radius: 5px;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.274);
+    transition: all .5s;
 }
 .male:hover {
-    background-color: rgba(47, 47, 252, 0.829);
+    background-image: url(../img/male.png);
+    background-size: cover;
+    background-position: center;
     box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.192);
     transform: translateY(-5rem);
+    color: transparent;
 }
 .female {
     text-decoration: none;
@@ -152,11 +156,15 @@ body {
     padding: .7rem 1.2rem;
     border-radius: 5px;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.274);
+    transition: all .5s;
 }
 .female:hover {
-    background-color: rgba(47, 47, 252, 0.829);
+    background-image: url(../img/female.png);
+    background-size: cover;
+    background-position: center;
     box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.274);
     transform: translateY(-5rem);
+    color: transparent;
 }
 
 .video {

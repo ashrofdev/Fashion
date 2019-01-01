@@ -6,7 +6,15 @@
 
 html {
     font-size: 62.5%;
-   
+  
+}
+body {
+    padding: 3rem;
+}
+.about {
+    border: 1px solid rgba(0, 0, 255, 0.315);
+    padding: 3rem;
+    box-shadow: 1rem 1rem 1rem blue;
 }
 
 ::selection {
@@ -30,7 +38,6 @@ h2 {
 }
 .site-owner {
     padding: 8rem;
-    box-shadow: 3rem 1rem 1rem black;
     position: relative;
 }
 .designer {
@@ -97,4 +104,35 @@ h4 {
     .owner-border {
         padding: 8rem;
     }
+}
+.link {
+    margin: 3rem;
+}
+.full-story {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    padding: 1rem 1.5rem;
+    background-color: blue;
+    border-top-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+    transition: all .5s;
+}
+.full-story:hover {
+    border: 1px solid blue;
+    color: rgb(5, 5, 32);
+    font-weight: 500;
+    border-top-left-radius: 0;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+    background-image: url(../img/site-owner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.desi:hover {
+    background-image: url(../img/aaaa.jpg);
+    background-size: cover;
+    background-position: center;
 }
