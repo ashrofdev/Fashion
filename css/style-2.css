@@ -6,7 +6,6 @@
 
 html {
     font-size: 62.5%;
-  
 }
 body {
     padding: 3rem;
@@ -14,7 +13,8 @@ body {
 .about {
     border: 1px solid rgba(0, 0, 255, 0.315);
     padding: 3rem;
-    box-shadow: 1rem 1rem 1rem blue;
+    box-shadow: 1rem 1rem 3rem rgb(53, 53, 54);
+    
 }
 
 ::selection {
@@ -120,19 +120,33 @@ h4 {
     transition: all .5s;
 }
 .full-story:hover {
-    border: 1px solid blue;
-    color: rgb(5, 5, 32);
+    border: 1px solid rgb(85, 85, 248);
+    color: rgb(244, 244, 250);
     font-weight: 500;
     border-top-left-radius: 0;
     border-top-right-radius: 1.5rem;
     border-bottom-right-radius: 1.5rem;
     border-bottom-left-radius: 1.5rem;
-    background-image: url(../img/site-owner.jpg);
-    background-size: cover;
-    background-position: center;
+    background-color: rgba(34, 34, 241, 0.315);
+    transform: translateY(-.5rem);
+    box-shadow: 0 1rem 4rem rgba(61, 61, 61, 0.699);
 }
-.desi:hover {
-    background-image: url(../img/aaaa.jpg);
-    background-size: cover;
-    background-position: center;
+.back {
+    text-decoration: none;
+    padding: .5rem 1rem;
+    color: white;
+    background-color: rgba(34, 34, 248, 0.753);
+    float: right;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all .5s;
+}
+.back:hover {
+    background-color: rgba(34, 34, 248, 0.158);
+    color: rgba(34, 34, 248, 0.753);
+    transform: translateY(-.5rem);
+    box-shadow: 0 1rem 4rem rgba(61, 61, 61, 0.699);
+}
+.back:active {
+    transform: translateY(.5rem);
 }

@@ -13,6 +13,30 @@ html {
     color: blue;
     background-color: azure;
 }
+@keyframes back {
+    0% {     
+        background-image: linear-gradient(to right, black, white);
+    }
+    50% {     
+        background-image: linear-gradient(to right, rgb(247, 240, 240), rgb(248, 94, 66));
+    } 
+    55% {     
+        background-image: linear-gradient(to right, rgb(247, 111, 240), rgb(248, 221, 66));
+    } 60% {     
+        background-image: linear-gradient(to right, rgb(117, 154, 253), rgb(197, 66, 248));
+    } 65% {     
+        background-image: linear-gradient(to right, rgb(255, 23, 23), rgb(66, 242, 248));
+    } 
+    70% {     
+        background-image: linear-gradient(to right, rgb(245, 90, 90), rgb(202, 241, 59));
+    }
+    80% {     
+        background-image: linear-gradient(to right, rgb(209, 240, 70), rgb(73, 229, 250));
+    }
+    100% {
+        background-color: blue;
+    }
+}
 
 @keyframes times {
     0% {
@@ -47,7 +71,44 @@ html {
 
 @keyframes main {
     0% {     
-        color: black;
+        background-image: linear-gradient(to right, black, white);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    50% {     
+        background-image: linear-gradient(to right, rgb(247, 240, 240), rgb(248, 94, 66));
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    } 
+    55% {     
+        background-image: linear-gradient(to right, rgb(247, 111, 240), rgb(248, 221, 66));
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    } 60% {     
+        background-image: linear-gradient(to right, rgb(117, 154, 253), rgb(197, 66, 248));
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    } 65% {     
+        background-image: linear-gradient(to right, rgb(255, 23, 23), rgb(66, 242, 248));
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    } 
+    70% {     
+        background-image: linear-gradient(to right, rgb(245, 90, 90), rgb(202, 241, 59));
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    80% {     
+        background-image: linear-gradient(to right, rgb(209, 240, 70), rgb(73, 229, 250));
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
     }
     100% {
         color: white;
@@ -331,6 +392,7 @@ a {
         right: 3rem; } }
   
   .navigation__background {
+    animation: back 2s infinite;
     height: 5rem;
     width: 5rem;
     border-radius: 50%;
