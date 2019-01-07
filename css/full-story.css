@@ -1,0 +1,31 @@
+body {
+    background-color: rgb(235, 231, 231);
+    color: rgb(194, 191, 191);
+    padding: 2rem;
+}
+h1 {
+    text-align: center;
+    text-shadow: 1rem 1rem 2rem rgb(75, 73, 73);
+    color: black;
+}
+.left {
+    width: 45%;
+    float: right;
+    padding: 1rem;
+}
+.right {
+    width: 45%;
+    float: left;
+    padding: 1rem;
+}
+.fix {
+    clear: both;
+}
+.bottom {
+    text-align: center;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3rem;
+    font-size: 3rem;
+    margin-top: 30rem;
+}
